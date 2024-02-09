@@ -28,7 +28,7 @@ endmacro()
 
 include(CMakeFindDependencyMacro)
 
-if (ON)
+if (OFF)
     if (NOT "")
         find_dependency(glfw3 CONFIG)
     endif()
@@ -38,7 +38,7 @@ if (OFF)
     find_dependency(GLUT)
 endif()
 
-if (OFF OR OFF)
+if (ON OR ON)
     find_dependency(SDL2 CONFIG)
 endif()
 

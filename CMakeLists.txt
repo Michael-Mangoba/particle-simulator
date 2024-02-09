@@ -24,14 +24,17 @@ list(APPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/x64-wi
 # Copy GLFW DLL to output directory
 add_custom_command(TARGET particle POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_if_different
-	"${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/x64-windows/bin/glfw3.dll" $<TARGET_FILE_DIR:particle>)
+	"${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/SDL2d.dll" $<TARGET_FILE_DIR:particle>)
 
 # Packages
 find_package(glad CONFIG REQUIRED)
 target_link_libraries(particle PRIVATE glad::glad )
 
-find_package(glfw3 CONFIG REQUIRED)
-target_link_libraries(particle PRIVATE glfw)
-
 find_package(imgui CONFIG REQUIRED)
 target_link_libraries(particle PRIVATE imgui::imgui)
+
+find_package(SDL2 CONFIG REQUIRED)
+target_link_libraries(particle PRIVATE
+	$<TARGET_NAME_IF_EXISTS:SDL2::SDL2main>
+	$<IF:$<TARGET_EXISTS:SDL2::SDL2>,SDL2::SDL2,SDL2::SDL2-static>
+)
