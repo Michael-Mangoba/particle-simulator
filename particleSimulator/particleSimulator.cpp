@@ -1,11 +1,8 @@
+#define SDL_MAIN_HANDLED
+
 #include "simulatorGui.h"
-#include "glad/glad.h"
-#include <vector>
-#include <iostream>
-#include "imgui.h"
-#include "imgui_impl_sdl2.h"
-#include "imgui_impl_opengl3.h"
-#include <SDL.h>
+#include "particleSimulator.h"
+
 
 
 
@@ -17,23 +14,25 @@ public:
 	int x, y;
 	int init_angle;
 	int init_speed;
-	ImVec4 particleColor = ImVec4(0.0f, 0.0f, 1.0f, 1.0f);
+
 
 	Particle(int id, int x, int y, int init_angle, int init_speed)
 		: id(id), x(x), y(y), init_angle(init_angle), init_speed(init_speed) {}
 
 	// Render method to draw the particle
-	void Render() const {
-		//print rendering
-		glColor4f(particleColor.x, particleColor.y, particleColor.z, particleColor.w);
-		glPointSize(10.0f);  // Set point size (adjust as needed)
-		glBegin(GL_POINTS);
-		glVertex2i(x, y);
-		glEnd();
+	void Render(SDL_Renderer* renderer) const {
+		//print rendering color red
+		ImVec4 particleColor = ImVec4(255, 0, 0, 255);
+		SDL_SetRenderDrawColor(renderer, particleColor.x, particleColor.y, particleColor.z, particleColor.w);
+		
+		//Draw a Square
+		SDL_Rect rect = { x, y, 10, 10 };
+		SDL_RenderFillRect(renderer, &rect);
+		
 	}
 };
 
-// Define Obstacle class
+//Define Obstacle class
 class Obstacle {
 public:
 	int id;
@@ -43,11 +42,12 @@ public:
 		: id(id), x1(x1), y1(y1), x2(x2), y2(y2) {}
 
 	// Render method to draw the obstacle
-	void Render() const {
-		glBegin(GL_LINES);
-		glVertex2i(x1, y1);
-		glVertex2i(x2, y2);
-		glEnd();
+	void Render(SDL_Renderer* renderer) const {
+		//Set Color to Red
+		SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+
+		//Draw a line
+		SDL_RenderDrawLine(renderer, x1, y1, x2, y2);
 	}
 };
 
@@ -109,17 +109,17 @@ public:
 		ImGui::End();
 	}
 
-	void RenderParticlesAndObstacles() {
+	void RenderParticlesAndObstacles(SDL_Renderer* renderer) {
 		// Render particles
 		for (const auto& particle : particles) {
 			// Assuming Particle has a Render method
-			particle.Render();
+			particle.Render(renderer);
 		}
 
 		// Render obstacles
 		for (const auto& obstacle : obstacles) {
 			// Assuming Obstacle has a Render method
-			obstacle.Render();
+			obstacle.Render(renderer);
 		}
 	}
 };
@@ -133,14 +133,7 @@ int main(){
 	}
 
 	const char* glsl_version = "#version 130";
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, 0);
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
 
-	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
-	SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8);
 	SDL_WindowFlags window_flags = (SDL_WindowFlags)(SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
 	SDL_Window* window = SDL_CreateWindow("Dear ImGui SDL2+OpenGL3 example", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, window_flags);
 	if (window == nullptr)
@@ -150,9 +143,9 @@ int main(){
 	}
 
 	SDL_GLContext gl_context = SDL_GL_CreateContext(window);
-	SDL_GL_MakeCurrent(window, gl_context);
-	SDL_GL_SetSwapInterval(1); // Enable vsync
-
+	//SDL_GL_MakeCurrent(window, gl_context);
+	//SDL_GL_SetSwapInterval(1); // Enable vsync
+	
 	//if (!glfwInit())
 	//	return 1;
 
@@ -168,15 +161,19 @@ int main(){
 	//glfwMakeContextCurrent(window);
 	//glfwSwapInterval(1); // Enable vsync
 	
-	//if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))  // tie window context to glad's opengl funcs
-	//	throw("Unable to context to OpenGL");
+	if (!gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress))  // tie window context to glad's opengl funcs
+		throw("Unable to context to OpenGL");
 	
+	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+
 	//int screen_width, screen_height;
 	//glfwGetFramebufferSize(window, &screen_width, &screen_height);
 	//glViewport(0, 0, screen_width, screen_height);
+	ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
 	UserFrame myimgui;
-	myimgui.Init(window, gl_context, glsl_version);
+	glViewport(0, 0, 1280, 720);
+	myimgui.Init(window, renderer);
 
 
 	// Main loop
@@ -191,11 +188,17 @@ int main(){
 			if (event.type == SDL_WINDOWEVENT && event.window.event == SDL_WINDOWEVENT_CLOSE && event.window.windowID == SDL_GetWindowID(window))
 				done = true;
 		}
-
+			SDL_SetRenderDrawColor(renderer, clear_color.x * clear_color.w, clear_color.y * clear_color.w, clear_color.z * clear_color.w, clear_color.w);
+			SDL_RenderClear(renderer);
+			//draw line
+			//Set Color Blue
+			SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
+			//Create Line
+			SDL_RenderDrawLine(renderer, 0, 0, 640, 360);
 			myimgui.NewFrame();
 			myimgui.Update();
 
-			myimgui.RenderParticlesAndObstacles();
+			myimgui.RenderParticlesAndObstacles(renderer);
 
 			myimgui.Render(window);
 
@@ -206,6 +209,7 @@ int main(){
 				std::cerr << "OpenGL Error: " << error << std::endl;
 			}
 
+			SDL_RenderPresent(renderer);
 	}
 	myimgui.Shutdown(window, gl_context);
 	return 0;
