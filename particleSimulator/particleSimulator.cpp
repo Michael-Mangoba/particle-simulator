@@ -138,6 +138,7 @@ public:
 			particles.push_back(newParticle);
 		}
 
+		obstacle_id = obstacles.size();
 		//Input for obstacle
 		ImGui::Separator();
 		ImGui::Text("Obstacle");
