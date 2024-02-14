@@ -49,14 +49,18 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/imgui/src/v1.89.9-35b8d7fda8.clean/backends/imgui_impl_glfw.h")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
     "G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/imgui/src/v1.89.9-35b8d7fda8.clean/backends/imgui_impl_opengl3.h"
     "G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/imgui/src/v1.89.9-35b8d7fda8.clean/backends/imgui_impl_opengl3_loader.h"
     )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/imgui/src/v1.89.9-35b8d7fda8.clean/backends/imgui_impl_sdl2.h")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/imgui/src/v1.89.9-35b8d7fda8.clean/backends/imgui_impl_sdlrenderer2.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

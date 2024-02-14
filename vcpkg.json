@@ -4,9 +4,9 @@
   "dependencies": [
     {
       "name": "imgui",
-      "features": [ "glfw-binding", "opengl3-binding" ]
+      "features": [ "sdl2-binding", "opengl3-binding", "sdl2-renderer-binding" ]
     },
-    "glfw3",
+    "sdl2",
     "glad"
   ]
 }

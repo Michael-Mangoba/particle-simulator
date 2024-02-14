@@ -1,13 +1,17 @@
 #include "simulatorGui.h"
 
-void UseImGui::Init(GLFWwindow* window, const char* glsl_version) {
+
+
+
+
+void UseImGui::Init(SDL_Window* window, SDL_Renderer* renderer) {
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
-	ImGuiIO &io = ImGui::GetIO();
+	ImGuiIO& io = ImGui::GetIO();
 
 	// Setup Platform/Renderer bindings
-	ImGui_ImplGlfw_InitForOpenGL(window, true);
-	ImGui_ImplOpenGL3_Init(glsl_version);
+	ImGui_ImplSDL2_InitForSDLRenderer(window, renderer);
+	ImGui_ImplSDLRenderer2_Init(renderer);
 
 	ImGui::StyleColorsLight();
 
@@ -16,8 +20,8 @@ void UseImGui::Init(GLFWwindow* window, const char* glsl_version) {
 
 void UseImGui::NewFrame() {
 	//feed inputs to dear imgui, start new frame
-	ImGui_ImplOpenGL3_NewFrame();
-	ImGui_ImplGlfw_NewFrame();
+	ImGui_ImplSDLRenderer2_NewFrame();
+	ImGui_ImplSDL2_NewFrame();
 	ImGui::NewFrame();
 }
 
@@ -27,17 +31,19 @@ void UseImGui::Update() {
 	
 }
 
-void UseImGui::Render() {
+void UseImGui::Render(SDL_Window* window) {
 	// render imgui to screen
 	ImGui::Render();
-	ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+	ImGui_ImplSDLRenderer2_RenderDrawData(ImGui::GetDrawData());
 	
 }	
 
-void UseImGui::Shutdown() {
+void UseImGui::Shutdown(SDL_Window* window, SDL_GLContext gl_context) {
 	// Cleanup
-	ImGui_ImplOpenGL3_Shutdown();
-	ImGui_ImplGlfw_Shutdown();
+	ImGui_ImplSDL2_Shutdown();
 	ImGui::DestroyContext();
 	
+	SDL_GL_DeleteContext(gl_context);
+	SDL_DestroyWindow(window);
+	SDL_Quit();
 }
