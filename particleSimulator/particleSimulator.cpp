@@ -12,19 +12,58 @@ class Particle {
 public:
 	int id;
 	int x, y;
-	int init_angle;
+	double angle;
 	int init_speed;
-
+	const double PI = 3.14159265358979323846;
+	ImVec4 particleColor = ImVec4(255, 0, 0, 255);
+	int screen_width = 1280;
+	int screen_height = 720;
 
 	Particle(int id, int x, int y, int init_angle, int init_speed)
-		: id(id), x(x), y(y), init_angle(init_angle), init_speed(init_speed) {}
+		: id(id), x(x), y(y), angle(init_angle), init_speed(init_speed) {
+	}
+
+	void calculateNewPosition() {
+		// Convert the angle to radians
+		while (angle < 0) { angle += 2 * PI; }
+		while (angle > 2 * PI) { angle -= 2 * PI; }
+		//print angle in radians
+		std::cout << "Angle in radians: " << angle << std::endl;
+
+		// Calculate the displacement in x and y directions
+		int dx = (int)(init_speed * cos(angle));
+		int dy = (int)(init_speed * sin(angle));
+		//print displacement dx and dy
+				
+		std::cout << "Displacement in x: " << dx << ", Displacement in y: " << dy << std::endl;
+
+
+		// Update the particle's position
+		x += dx;
+		y += dy;
+	}
+
+	void handleWallBounce() {
+		// Check if the particle is hitting the left or right wall
+		if (x <= 0 || x >= screen_width - 10) { // Assuming the particle is represented as a square with a side length of 10
+			// Reverse the x-component of the velocity
+			angle = PI - angle;
+		}
+
+		// Check if the particle is hitting the top or bottom wall
+		if (y <= 0 || y >= screen_height - 10) { // Assuming the particle is represented as a square with a side length of 10
+			// Reverse the y-component of the velocity
+			angle = -angle;
+		}
+	}
 
 	// Render method to draw the particle
-	void Render(SDL_Renderer* renderer) const {
+	void Render(SDL_Renderer* renderer) {
 		//print rendering color red
-		ImVec4 particleColor = ImVec4(255, 0, 0, 255);
 		SDL_SetRenderDrawColor(renderer, particleColor.x, particleColor.y, particleColor.z, particleColor.w);
-		
+		//calculate new position of partice based on angle and speed
+		calculateNewPosition();
+		handleWallBounce();
 		//Draw a Square
 		SDL_Rect rect = { x, y, 10, 10 };
 		SDL_RenderFillRect(renderer, &rect);
@@ -111,7 +150,7 @@ public:
 
 	void RenderParticlesAndObstacles(SDL_Renderer* renderer) {
 		// Render particles
-		for (const auto& particle : particles) {
+		for (auto& particle : particles) {
 			// Assuming Particle has a Render method
 			particle.Render(renderer);
 		}
