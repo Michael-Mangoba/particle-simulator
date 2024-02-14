@@ -45,15 +45,23 @@ public:
 
 	void handleWallBounce() {
 		// Check if the particle is hitting the left or right wall
-		if (x <= 0 || x >= screen_width - 10) { // Assuming the particle is represented as a square with a side length of 10
-			// Reverse the x-component of the velocity
-			angle = PI - angle;
+		if (x <= 0) { // If hitting the left wall
+			x = 0; // Set x to the leftmost position
+			angle = PI - angle; // Reverse the x-component of the velocity
+		}
+		else if (x >= screen_width - 10) { // If hitting the right wall
+			x = screen_width - 10; // Set x to the rightmost position
+			angle = PI - angle; // Reverse the x-component of the velocity
 		}
 
 		// Check if the particle is hitting the top or bottom wall
-		if (y <= 0 || y >= screen_height - 10) { // Assuming the particle is represented as a square with a side length of 10
-			// Reverse the y-component of the velocity
-			angle = -angle;
+		if (y <= 0) { // If hitting the top wall
+			y = 0; // Set y to the topmost position
+			angle = -angle; // Reverse the y-component of the velocity
+		}
+		else if (y >= screen_height - 10) { // If hitting the bottom wall
+			y = screen_height - 10; // Set y to the bottommost position
+			angle = -angle; // Reverse the y-component of the velocity
 		}
 	}
 
@@ -154,7 +162,17 @@ public:
 			// Assuming Particle has a Render method
 			particle.Render(renderer);
 		}
+		int screen_width = 1280;
+		int screen_height = 720;
+		// Set the color to white
+		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 
+
+		// Draw border lines
+		SDL_RenderDrawLine(renderer, 0, 0, screen_width, 0); // Top border line
+		SDL_RenderDrawLine(renderer, screen_width, 0, screen_width, screen_height); // Right border line
+		SDL_RenderDrawLine(renderer, screen_width, screen_height, 0, screen_height); // Bottom border line
+		SDL_RenderDrawLine(renderer, 0, screen_height, 0, 0); // Left border line
 		// Render obstacles
 		for (const auto& obstacle : obstacles) {
 			// Assuming Obstacle has a Render method
@@ -229,11 +247,7 @@ int main(){
 		}
 			SDL_SetRenderDrawColor(renderer, clear_color.x * clear_color.w, clear_color.y * clear_color.w, clear_color.z * clear_color.w, clear_color.w);
 			SDL_RenderClear(renderer);
-			//draw line
-			//Set Color Blue
-			SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
-			//Create Line
-			SDL_RenderDrawLine(renderer, 0, 0, 640, 360);
+			
 			myimgui.NewFrame();
 			myimgui.Update();
 
