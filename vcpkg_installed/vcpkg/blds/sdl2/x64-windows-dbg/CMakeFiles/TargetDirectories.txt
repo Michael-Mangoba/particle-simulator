@@ -1,9 +1,0 @@
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/sdl_headers_copy.dir
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/SDL2main.dir
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/SDL2.dir
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/uninstall.dir
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/edit_cache.dir
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/rebuild_cache.dir
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/list_install_components.dir
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/install.dir
-G:/OneDrive/OneDrive - De La Salle University - Manila/College Files/4th Year/Term 2/STDISCM/particle/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/install/local.dir
