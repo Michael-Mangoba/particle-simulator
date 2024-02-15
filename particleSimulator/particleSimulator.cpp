@@ -116,9 +116,9 @@ public:
 
 			float distance = std::sqrt((x - closest_x) * (x - closest_x) + (y - closest_y) * (y - closest_y));
 
+			// Collision detected
 			if (distance <= 5)
 			{
-				// Collision detected, handle it here
 				// Calculate the normal to the obstacle line
 				float nx = -dy;
 				float ny = dx;
@@ -138,18 +138,6 @@ public:
 				// Update the angle based on the reflected movement vector
 				angle = std::atan2(reflected_dy, reflected_dx);
 			}
-			// // Check for collision with the obstacle
-			// if (x >= obstacle.x1 && x <= obstacle.x2 && y >= obstacle.y1 && y <= obstacle.y2)
-			// {
-			// 	// Print the x and obstacle coordinates
-			// 	std::cout << "Particle x: " << x << ", Particle y: " << y << std::endl;
-			// 	std::cout << "Obstacle x1: " << obstacle.x1 << ", Obstacle y1: " << obstacle.y1 << std::endl;
-
-			// 	// Print the obstacle id
-			// 	std::cout << "Obstacle ID: " << obstacle.id << std::endl;
-			// 	// Perform obstacle bounce (modify angle as needed)
-			// 	angle = -angle;
-			// }
 		}
 	}
 
@@ -276,23 +264,11 @@ int main()
 	}
 
 	SDL_GLContext gl_context = SDL_GL_CreateContext(window);
-	// SDL_GL_MakeCurrent(window, gl_context);
-	// SDL_GL_SetSwapInterval(1); // Enable vsync
-
-	// if (!glfwInit())
-	//	return 1;
-
-	// GL 3.0 + GLSL 130
-	// const char* glsl_version = "#version 130";
-	// glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	// glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
-	// glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);  // 3.2+ only
-	// glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);            // 3.0+ only
-
-	// Create window with graphics context
-	// GLFWwindow* window = glfwCreateWindow(1280, 720, "Particle Simulator", NULL, NULL);
-	// glfwMakeContextCurrent(window);
-	// glfwSwapInterval(1); // Enable vsync
+	if (gl_context == nullptr)
+	{
+		printf("Error: SDL_GL_CreateContext(): %s\n", SDL_GetError());
+		return -1;
+	}
 
 	if (!gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress)) // tie window context to glad's opengl funcs
 		throw("Unable to context to OpenGL");
@@ -329,7 +305,6 @@ int main()
 		myimgui.Update();
 
 		myimgui.RenderParticlesAndObstacles(renderer);
-
 		myimgui.Render(window);
 
 		// Check for OpenGL errors
