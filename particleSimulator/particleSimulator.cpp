@@ -102,16 +102,54 @@ public:
 	{
 		for (const auto &obstacle : obstacles)
 		{
-			// Check for collision with the obstacle
-			if (x >= obstacle.x1 && x <= obstacle.x2 && y >= obstacle.y1 && y <= obstacle.y2)
+			float dx = obstacle.x2 - obstacle.x1;
+			float dy = obstacle.y2 - obstacle.y1;
+
+			float px = x - obstacle.x1;
+			float py = y - obstacle.y1;
+
+			float t = (px * dx + py * dy) / (dx * dx + dy * dy);
+			t = std::max(0.0f, std::min(1.0f, t));
+
+			float closest_x = obstacle.x1 + t * dx;
+			float closest_y = obstacle.y1 + t * dy;
+
+			float distance = std::sqrt((x - closest_x) * (x - closest_x) + (y - closest_y) * (y - closest_y));
+
+			if (distance <= 5)
 			{
-				// Print the obstacle id
-				std::cout << "Obstacle ID: " << obstacle.id << std::endl;
-				// Perform obstacle bounce (modify angle as needed)
-				angle = -angle;
-				// Print the new angle
-				std::cout << "Bounce New Angle: " << angle << std::endl;
+				// Collision detected, handle it here
+				// Calculate the normal to the obstacle line
+				float nx = -dy;
+				float ny = dx;
+
+				// Normalize the normal vector
+				float length = std::sqrt(nx * nx + ny * ny);
+				nx /= length;
+				ny /= length;
+
+				// Calculate the dot product of the movement vector and the normal vector
+				float dot = dx * nx + dy * ny;
+
+				// Reflect the movement vector about the normal vector
+				float reflected_dx = dx - 2 * dot * nx;
+				float reflected_dy = dy - 2 * dot * ny;
+
+				// Update the angle based on the reflected movement vector
+				angle = std::atan2(reflected_dy, reflected_dx);
 			}
+			// // Check for collision with the obstacle
+			// if (x >= obstacle.x1 && x <= obstacle.x2 && y >= obstacle.y1 && y <= obstacle.y2)
+			// {
+			// 	// Print the x and obstacle coordinates
+			// 	std::cout << "Particle x: " << x << ", Particle y: " << y << std::endl;
+			// 	std::cout << "Obstacle x1: " << obstacle.x1 << ", Obstacle y1: " << obstacle.y1 << std::endl;
+
+			// 	// Print the obstacle id
+			// 	std::cout << "Obstacle ID: " << obstacle.id << std::endl;
+			// 	// Perform obstacle bounce (modify angle as needed)
+			// 	angle = -angle;
+			// }
 		}
 	}
 
