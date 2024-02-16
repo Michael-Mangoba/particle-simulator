@@ -45,32 +45,19 @@ public:
 	{
 		angle = 360 - angle;
 		angle = angle * PI / 180;
-		
+
 		// print angle in degrees
 		std::cout << "Angle in degrees: " << angle << std::endl;
 	}
 
 	void calculateNewPosition()
 	{
-		// Convert the angle to radians
 		while (angle < 0)
-		{
 			angle += 2 * PI;
-		}
 		while (angle > 2 * PI)
-		{
 			angle -= 2 * PI;
-		}
-
-		// Calculate the displacement in x and y directions
-		double dx = (double)init_velocity * cos(angle);
-		double dy = (double)init_velocity * sin(angle);
-
-
-		// Update the particle's position
-		x += dx;
-		y += dy;
-
+		x += init_velocity * cos(angle);
+		y += init_velocity * sin(angle);
 	}
 
 	void handleWallBounce()
@@ -150,11 +137,11 @@ public:
 	{
 		// print rendering color red
 		SDL_SetRenderDrawColor(renderer, particleColor.x, particleColor.y, particleColor.z, particleColor.w);
-		// calculate new position of partice based on angle and speed
+		// calculate new position of particle based on angle, velocity, and obstacles
 		calculateNewPosition();
 		handleWallBounce();
 		handleObstacleBounce();
-		// Draw a Square
+		// draw a square
 		SDL_Rect rect = {x, y, 5, 5};
 		SDL_RenderFillRect(renderer, &rect);
 	}
