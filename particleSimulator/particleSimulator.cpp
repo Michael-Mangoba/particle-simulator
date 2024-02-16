@@ -42,6 +42,7 @@ public:
 	Particle(int id, int x, int y, int init_angle, int init_speed, std::vector<Obstacle> &obstacles)
 		: id(id), x(x), y(y), angle(init_angle), init_speed(init_speed), obstacles(obstacles)
 	{
+		angle = 360 - angle;
 		angle = init_angle * PI / 180;
 		// print angle in degrees
 			std::cout << "Angle in degrees: " << angle << std::endl;
@@ -284,9 +285,6 @@ public:
 		}
 
 		for (int i = thread_ID; i < particles.size(); i += max_threads) {
-			particles[i].calculateNewPosition();
-			particles[i].handleWallBounce();
-			particles[i].handleObstacleBounce();
 			particles[i].Render(renderer);
 		}
 	}
