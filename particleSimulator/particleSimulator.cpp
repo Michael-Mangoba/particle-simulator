@@ -40,8 +40,11 @@ public:
 	std::vector<Obstacle> &obstacles; // Reference to the vector of obstacles
 
 	Particle(int id, int x, int y, int init_angle, int init_speed, std::vector<Obstacle> &obstacles)
-		: id(id), x(x), y(y), angle(init_angle * PI / 180), init_speed(init_speed), obstacles(obstacles)
+		: id(id), x(x), y(y), angle(init_angle), init_speed(init_speed), obstacles(obstacles)
 	{
+		angle = init_angle * PI / 180;
+		// print angle in degrees
+			std::cout << "Angle in degrees: " << angle << std::endl;
 	}
 
 	void calculateNewPosition()
@@ -56,14 +59,14 @@ public:
 			angle -= 2 * PI;
 		}
 		// print angle in radians
-		std::cout << "Angle in radians: " << angle << std::endl;
+		//std::cout << "Angle in radians: " << angle << std::endl;
 
 		// Calculate the displacement in x and y directions
 		int dx = (int)(init_speed * cos(angle));
 		int dy = (int)(init_speed * sin(angle));
-		// print displacement dx and dy
 
-		std::cout << "Displacement in x: " << dx << ", Displacement in y: " << dy << std::endl;
+		// print displacement dx and dy
+		//std::cout << "Displacement in x: " << dx << ", Displacement in y: " << dy << std::endl;
 
 		// Update the particle's position
 		x += dx;
