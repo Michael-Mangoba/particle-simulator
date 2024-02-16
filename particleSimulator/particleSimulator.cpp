@@ -43,7 +43,7 @@ public:
 		: id(id), x(x), y(y), angle(init_angle), init_speed(init_speed), obstacles(obstacles)
 	{
 		angle = 360 - angle;
-		angle = init_angle * PI / 180;
+		angle = angle * PI / 180;
 		// print angle in degrees
 			std::cout << "Angle in degrees: " << angle << std::endl;
 	}
