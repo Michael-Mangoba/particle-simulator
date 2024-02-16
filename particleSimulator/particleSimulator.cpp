@@ -60,15 +60,10 @@ public:
 		{
 			angle -= 2 * PI;
 		}
-		// print angle in radians
-		// std::cout << "Angle in radians: " << angle << std::endl;
 
 		// Calculate the displacement in x and y directions
 		int dx = (int)(init_velocity * cos(angle));
 		int dy = (int)(init_velocity * sin(angle));
-
-		// print displacement dx and dy
-		// std::cout << "Displacement in x: " << dx << ", Displacement in y: " << dy << std::endl;
 
 		// Update the particle's position
 		x += dx;
