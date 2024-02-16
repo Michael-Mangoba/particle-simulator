@@ -306,7 +306,7 @@ public:
 		clampValueRelativeToRange(m2_start_angle, 0, 360, m2_end_angle);
 		ImGui::InputInt("End Angle", &m2_end_angle);
 		clampValueRelativeToRangeEnd(m2_end_angle, 0, 360, m2_start_angle);
-		if (ImGui::Button("[Method 1] Add Particles in Batch"))
+		if (ImGui::Button("[Method 2] Add Particles in Batch"))
 		{
 			for (int i = 0; i < batch_size; i++)
 			{
