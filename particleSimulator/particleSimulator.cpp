@@ -168,7 +168,7 @@ public:
 		handleWallBounce();
 		handleObstacleBounce();
 		// Draw a Square
-		SDL_Rect rect = {x, y, 10, 10};
+		SDL_Rect rect = {x, y, 1, 1};
 		SDL_RenderFillRect(renderer, &rect);
 	}
 };
@@ -322,7 +322,7 @@ int main()
 	const char *glsl_version = "#version 130";
 
 	SDL_WindowFlags window_flags = (SDL_WindowFlags)(SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
-	SDL_Window *window = SDL_CreateWindow("Dear ImGui SDL2+OpenGL3 example", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, window_flags);
+	SDL_Window *window = SDL_CreateWindow("Particle Simulator (ImGUI SDL2+OpenGL3) - Mangoba, Palpallatoc", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, window_flags);
 	if (window == nullptr)
 	{
 		printf("Error: SDL_CreateWindow(): %s\n", SDL_GetError());
