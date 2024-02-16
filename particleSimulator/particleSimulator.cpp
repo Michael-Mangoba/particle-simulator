@@ -33,15 +33,15 @@ public:
 	int x, y;
 	int collided_obstacle_id = -1;
 	double angle;
-	int init_speed;
+	int init_velocity;
 	const double PI = 3.14159265358979323846;
 	ImVec4 particleColor = ImVec4(255, 0, 0, 255);
 	int screen_width = 1280;
 	int screen_height = 720;
 	std::vector<Obstacle> &obstacles; // Reference to the vector of obstacles
 
-	Particle(int id, int x, int y, int init_angle, int init_speed, std::vector<Obstacle> &obstacles)
-		: id(id), x(x), y(y), angle(init_angle), init_speed(init_speed), obstacles(obstacles)
+	Particle(int id, int x, int y, int init_angle, int init_velocity, std::vector<Obstacle> &obstacles)
+		: id(id), x(x), y(y), angle(init_angle), init_velocity(init_velocity), obstacles(obstacles)
 	{
 		angle = 360 - angle;
 		angle = angle * PI / 180;
@@ -64,8 +64,8 @@ public:
 		// std::cout << "Angle in radians: " << angle << std::endl;
 
 		// Calculate the displacement in x and y directions
-		int dx = (int)(init_speed * cos(angle));
-		int dy = (int)(init_speed * sin(angle));
+		int dx = (int)(init_velocity * cos(angle));
+		int dy = (int)(init_velocity * sin(angle));
 
 		// print displacement dx and dy
 		// std::cout << "Displacement in x: " << dx << ", Displacement in y: " << dy << std::endl;
@@ -168,7 +168,7 @@ public:
 		handleWallBounce();
 		handleObstacleBounce();
 		// Draw a Square
-		SDL_Rect rect = {x, y, 1, 1};
+		SDL_Rect rect = {x, y, 5, 5};
 		SDL_RenderFillRect(renderer, &rect);
 	}
 };
@@ -183,7 +183,29 @@ public:
 	int particle_x = 0;
 	int particle_y = 0;
 	int particle_init_angle = 0;
-	int particle_init_speed = 0;
+	int particle_init_velocity = 0;
+
+	// Batch size for adding particles
+	int batch_size = 0;
+	// Method 1
+	int m1_angle = 0;
+	int m1_velocity = 0;
+	int m1_start_x = 0;
+	int m1_start_y = 0;
+	int m1_end_x = 0;
+	int m1_end_y = 0;
+	// Method 2
+	int m2_start_x = 0;
+	int m2_start_y = 0;
+	int m2_velocity = 0;
+	int m2_start_angle = 0;
+	int m2_end_angle = 0;
+	// Method 3
+	int m3_start_x = 0;
+	int m3_start_y = 0;
+	int m3_angle = 0;
+	int m3_start_velocity = 0;
+	int m3_end_velocity = 0;
 
 	int obstacle_id = 0;
 	int obstacle_x1 = 0;
@@ -207,14 +229,19 @@ public:
 		ImGui::InputInt("X", &particle_x);
 		ImGui::InputInt("Y", &particle_y);
 		ImGui::InputInt("Init Angle", &particle_init_angle);
-		ImGui::InputInt("Init Speed", &particle_init_speed);
+		ImGui::InputInt("Init Velocity", &particle_init_velocity);
 
 		if (ImGui::Button("Add Particle"))
 		{
 			// add particle code
-			Particle newParticle(particle_id, particle_x, particle_y, particle_init_angle, particle_init_speed, obstacles);
+			Particle newParticle(particle_id, particle_x, particle_y, particle_init_angle, particle_init_velocity, obstacles);
 			particles.push_back(newParticle);
 		}
+
+		// Input for batch size
+		ImGui::Separator();
+		ImGui::Text("Batch Size");
+		ImGui::InputInt("Batch Size", &batch_size);
 
 		obstacle_id = obstacles.size();
 		// Input for obstacle
@@ -234,6 +261,108 @@ public:
 		}
 
 		ImGui::End();
+
+		MethodOneGUI();
+		MethodTwoGUI();
+		MethodThreeGUI();
+	}
+
+	void MethodOneGUI()
+	{
+		ImGui::Begin("Method 1", 0, ImGuiWindowFlags_AlwaysAutoResize);
+		ImGui::InputInt("Start X", &m1_start_x);
+		clampValueRelativeToRange(m1_start_x, 0, 1280, m1_end_x);
+		ImGui::InputInt("Start Y", &m1_start_y);
+		clampValueRelativeToRange(m1_start_y, 0, 720, m1_end_y);
+		ImGui::InputInt("End X", &m1_end_x);
+		clampValueRelativeToRangeEnd(m1_end_x, 0, 1280, m1_start_x);
+		ImGui::InputInt("End Y", &m1_end_y);
+		clampValueRelativeToRangeEnd(m1_end_y, 0, 720, m1_start_y);
+		ImGui::InputInt("Angle", &m1_angle);
+		clampValue(m1_angle, 0, 360);
+		ImGui::InputInt("Velocity", &m1_velocity);
+		clampValue(m1_velocity, 1, 50);
+
+		// Add particles in batch
+		if (ImGui::Button("[Method 1] Add Particles in Batch"))
+		{
+			for (int i = 0; i < batch_size; i++)
+			{
+				// Calculate the distance between start and end points
+				double dx = m1_end_x - m1_start_x;
+				double dy = m1_end_y - m1_start_y;
+
+				double distance = std::sqrt(dx * dx + dy * dy);
+
+				double x = m1_start_x + (dx * i / batch_size);
+				double y = m1_start_y + (dy * i / batch_size);
+
+				int pos_x = (int)x;
+				int pos_y = (int)y;
+
+				// Add particle
+				Particle newParticle(particle_id, pos_x, pos_y, m1_angle, m1_velocity, obstacles);
+				particles.push_back(newParticle);
+				particle_id++;
+			}
+		}
+		ImGui::End();
+	}
+
+	void MethodTwoGUI()
+	{
+		ImGui::Begin("Method 2", 0, ImGuiWindowFlags_AlwaysAutoResize);
+		ImGui::InputInt("Start X", &m2_start_x);
+		ImGui::InputInt("Start Y", &m2_start_y);
+		ImGui::InputInt("Velocity", &m2_velocity);
+		ImGui::InputInt("Start Angle", &m2_start_angle);
+		ImGui::InputInt("End Angle", &m2_end_angle);
+		if (ImGui::Button("Add Particle"))
+		{
+			// add particle code
+			Particle newParticle(particle_id, m2_start_x, m2_start_y, m2_start_angle, m2_velocity, obstacles);
+			particles.push_back(newParticle);
+		}
+		ImGui::End();
+	}
+
+	void MethodThreeGUI()
+	{
+		ImGui::Begin("Method 3", 0, ImGuiWindowFlags_AlwaysAutoResize);
+		ImGui::InputInt("Start X", &m3_start_x);
+		ImGui::InputInt("Start Y", &m3_start_y);
+		ImGui::InputInt("Angle", &m3_angle);
+		ImGui::InputInt("Start Velocity", &m3_start_velocity);
+		ImGui::InputInt("End Velocity", &m3_end_velocity);
+		if (ImGui::Button("Add Particle"))
+		{
+			// add particle code
+			Particle newParticle(particle_id, m3_start_x, m3_start_y, m3_angle, m3_start_velocity, obstacles);
+			particles.push_back(newParticle);
+		}
+		ImGui::End();
+	}
+
+	void clampValue(int &num, int min, int max)
+	{
+		if (num < min)
+			num = min;
+		if (num > max)
+			num = max;
+	}
+
+	void clampValueRelativeToRange(int &num, int min, int max, int &relativeBound)
+	{
+		clampValue(num, min, max);
+		if (num > relativeBound && num <= max)
+			relativeBound = num;
+	}
+
+	void clampValueRelativeToRangeEnd(int &num, int min, int max, int &relativeBound)
+	{
+		clampValue(num, min, max);
+		if (num < relativeBound && num >= min)
+			relativeBound = num;
 	}
 
 	void RenderParticlesAndObstacles(SDL_Renderer *renderer)
@@ -274,7 +403,7 @@ public:
 		else
 		{
 			std::cout << "Number of CPU cores: " << cores << std::endl;
-			max_threads = cores;
+			max_threads = (cores > 1) ? (cores - 1) : 1;
 		}
 	}
 
@@ -341,9 +470,6 @@ int main()
 
 	SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
-	// int screen_width, screen_height;
-	// glfwGetFramebufferSize(window, &screen_width, &screen_height);
-	// glViewport(0, 0, screen_width, screen_height);
 	ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
 	UserFrame myimgui;
