@@ -143,17 +143,6 @@ public:
 				}
 
 				angle = new_angle;
-
-				// Print angles for debugging in degrees
-				// Calculate the normal to the obstacle line
-				float nx = -dy;
-				float ny = dx;
-
-				// Normalize the normal vector
-				float length = std::sqrt(nx * nx + ny * ny);
-				nx /= length;
-				ny /= length;
-				std::cout << "Particle Angle: " << angle * 180.0 / M_PI << " degrees  Obstacle Angle: " << std::atan2(ny, nx) * 180.0 / M_PI << " degrees" << std::endl;
 			}
 		}
 	}
