@@ -164,6 +164,7 @@ class UserFrame : public UseImGui
 public:
 	std::vector<Particle> particles;
 	std::vector<Obstacle> obstacles;
+	int max_threads;
 	int particle_id = 0;
 	int particle_x = 0;
 	int particle_y = 0;
@@ -223,12 +224,13 @@ public:
 
 	void RenderParticlesAndObstacles(SDL_Renderer *renderer)
 	{
+		multiThreadParticles(renderer);
 		// Render particles
-		for (auto &particle : particles)
-		{
-			// Assuming Particle has a Render method
-			particle.Render(renderer);
-		}
+		//for (auto &particle : particles)
+		//{
+		//	// Assuming Particle has a Render method
+		//	particle.Render(renderer);
+		//}
 		int screen_width = 1280;
 		int screen_height = 720;
 		// Set the color to white
@@ -244,6 +246,56 @@ public:
 		{
 			// Assuming Obstacle has a Render method
 			obstacle.Render(renderer);
+		}
+	}
+
+	void prepareMultiThreading() {
+		// prepare multi-threading
+		unsigned int cores = std::thread::hardware_concurrency();
+		if (cores == 0) {
+			std::cout << "Unable to determine the number of CPU cores." << std::endl;
+			max_threads = 4;
+		}
+		else {
+			std::cout << "Number of CPU cores: " << cores << std::endl;
+			max_threads = cores;
+		}
+	}
+
+
+	void multiThreadParticles(SDL_Renderer* renderer) {
+		// Multi-threading
+		std::vector<std::thread> threads;
+		//create max_threads number of vectors to store particles for updateParticles method
+		std::vector<std::vector<Particle>> sub_particles(max_threads);
+
+		// Distribute the particles among the threads
+		for (int i = 0; i < particles.size(); i++) {
+			sub_particles[i % max_threads].push_back(particles[i]);
+		}
+
+		//display number of particles in each sub_particles
+		//for (int i = 0; i < max_threads; i++) {
+		//	std::cout << "Number of particles in sub_particles[" << i << "]: " << sub_particles[i].size() << std::endl;
+		//}
+
+		// Create threads
+		for (int i = 0; i < max_threads; i++) {
+			threads.push_back(std::thread(&UserFrame::updateParticles, this, std::ref(sub_particles[i]), renderer));
+		}
+
+		
+		for (auto& thread : threads) {
+			thread.join();
+		}
+	}
+
+	void updateParticles(vector<Particle>& sub_particles, SDL_Renderer* renderer) {
+		for (int i = 0; i < sub_particles.size(); i++) {
+			particles[i].calculateNewPosition();
+			particles[i].handleWallBounce();
+			particles[i].handleObstacleBounce();
+			particles[i].Render(renderer);
 		}
 	}
 };
@@ -286,6 +338,7 @@ int main()
 	UserFrame myimgui;
 	glViewport(0, 0, 1280, 720);
 	myimgui.Init(window, renderer);
+	myimgui.prepareMultiThreading();
 
 	// Main loop
 	bool done = false;
