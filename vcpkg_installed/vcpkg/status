@@ -1,0 +1,117 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: bbfc4467f81d99b5321d8a2bf8db52c8a9bc67b938f3d08703df988f774c3de1
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2023-05-04
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 06010dd6fb18f0cb9f953e8ee37e00862a56615b72e181886dee1f2b2e79bd0b
+Status: install ok installed
+
+Package: egl-registry
+Version: 2022-09-20
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 22b6a788335294ac730b86311edfc8b723448650b41f6b7e28582ca731d1381b
+Description: the EGL API and Extension Registry
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2022-09-29
+Port-Version: 1
+Depends: egl-registry
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 7cb2d712ad1ed57af007b21e91a2b63a06ceb9489989fa382e13584b80e2d9d5
+Description: the API and Extension registries for the OpenGL family APIs
+Status: install ok installed
+
+Package: glad
+Version: 0.1.36
+Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 16f6242539090a4227ad73b7e758f28ea1d7d1e176ce087d8e4e3e68787bd588
+Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
+Default-Features: loader
+Status: install ok installed
+
+Package: glad
+Feature: loader
+Architecture: x64-windows
+Multi-Arch: same
+Description: Generate loader logic.
+Status: install ok installed
+
+Package: glfw3
+Version: 3.3.8
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6ffbf792833b46b0f8cda313c26c9d3ebe9bfb59d0671993aae622c9b5f340f6
+Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
+Status: purge ok not-installed
+
+Package: imgui
+Version: 1.89.9
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4cf83e0cdfb126273b4681897d144386ba60ae397daf4530f8cbd83f865a8d4a
+Description: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies.
+Status: install ok installed
+
+Package: imgui
+Feature: glfw-binding
+Depends: glfw3
+Architecture: x64-windows
+Multi-Arch: same
+Description: Make available GLFW binding
+Status: purge ok not-installed
+
+Package: imgui
+Feature: opengl3-binding
+Architecture: x64-windows
+Multi-Arch: same
+Description: Make available OpenGL3/ES/ES2 (modern) binding
+Status: install ok installed
+
+Package: sdl2
+Version: 2.28.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 730006f9e6eeb3c390c9e936e77e921bca167196cb93b02ce7da9c8f1f06f0dc
+Description: Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
+Default-Features: base
+Status: install ok installed
+
+Package: sdl2
+Feature: base
+Architecture: x64-windows
+Multi-Arch: same
+Description: Base functionality for SDL
+Status: install ok installed
+
+Package: imgui
+Feature: sdl2-binding
+Depends: sdl2
+Architecture: x64-windows
+Multi-Arch: same
+Description: Make available SDL2 binding
+Status: install ok installed
+
+Package: imgui
+Feature: sdl2-renderer-binding
+Depends: sdl2
+Architecture: x64-windows
+Multi-Arch: same
+Description: Make available SDL2 Renderer binding
+Status: install ok installed
+

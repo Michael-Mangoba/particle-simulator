@@ -1,0 +1,1070 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The target system is: Windows - 10.0.22631 - AMD64
+      The host system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe 
+      Build flags: /nologo;/DWIN32;/D_WINDOWS;/W3;/utf-8;/MP
+      Id flags:  
+      
+      The output was:
+      0
+      CMakeCCompilerId.c
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/3.28.0-msvc1/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe 
+      Build flags: /nologo;/DWIN32;/D_WINDOWS;/W3;/utf-8;/GR;/EHsc;/MP
+      Id flags:  
+      
+      The output was:
+      0
+      CMakeCXXCompilerId.cpp
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/3.28.0-msvc1/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-yp2jg5"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-yp2jg5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-yp2jg5'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a343a
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_a343a.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_a343a.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a343a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a343a.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_a343a.exe /implib:cmTC_a343a.lib /pdb:cmTC_a343a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-yttei7"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-yttei7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-yttei7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_46049
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /GR /EHsc /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_46049.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_46049.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_46049.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_46049.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_46049.exe /implib:cmTC_46049.lib /pdb:cmTC_46049.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:79 (check_symbol_exists)"
+    checks:
+      - "Looking for __GLIBC__"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lrcuvy"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lrcuvy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "LIBC_IS_GLIBC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lrcuvy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2d1e3
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2d1e3.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_2d1e3.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-lrcuvy\\CheckSymbolExists.c
+        FAILED: CMakeFiles/cmTC_2d1e3.dir/CheckSymbolExists.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2d1e3.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_2d1e3.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-lrcuvy\\CheckSymbolExists.c
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-lrcuvy\\CheckSymbolExists.c(8): error C2065: '__GLIBC__': undeclared identifier
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:28 (_internal_check_cpu_architecture)"
+      - "CMakeLists.txt:136 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_X86"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-zl0wy1"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-zl0wy1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_X86"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-zl0wy1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e30c8
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_e30c8.dir\\src.c.obj /FdCMakeFiles\\cmTC_e30c8.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-zl0wy1\\src.c
+        FAILED: CMakeFiles/cmTC_e30c8.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_e30c8.dir\\src.c.obj /FdCMakeFiles\\cmTC_e30c8.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-zl0wy1\\src.c
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-zl0wy1\\src.c(8): error C2065: 'choke': undeclared identifier
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-zl0wy1\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:30 (_internal_check_cpu_architecture)"
+      - "CMakeLists.txt:137 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_X64"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-nnklab"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-nnklab"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_X64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-nnklab'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_9f66d
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_9f66d.dir\\src.c.obj /FdCMakeFiles\\cmTC_9f66d.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-nnklab\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9f66d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9f66d.dir\\src.c.obj  /out:cmTC_9f66d.exe /implib:cmTC_9f66d.lib /pdb:cmTC_9f66d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:32 (_internal_check_cpu_architecture)"
+      - "CMakeLists.txt:138 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_ARM32"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rqu8u0"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rqu8u0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_ARM32"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-rqu8u0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_acb2e
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_acb2e.dir\\src.c.obj /FdCMakeFiles\\cmTC_acb2e.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-rqu8u0\\src.c
+        FAILED: CMakeFiles/cmTC_acb2e.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_acb2e.dir\\src.c.obj /FdCMakeFiles\\cmTC_acb2e.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-rqu8u0\\src.c
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-rqu8u0\\src.c(8): error C2065: 'choke': undeclared identifier
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-rqu8u0\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:34 (_internal_check_cpu_architecture)"
+      - "CMakeLists.txt:139 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_ARM64"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-l3ef8c"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-l3ef8c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_ARM64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-l3ef8c'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f61dc
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f61dc.dir\\src.c.obj /FdCMakeFiles\\cmTC_f61dc.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-l3ef8c\\src.c
+        FAILED: CMakeFiles/cmTC_f61dc.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f61dc.dir\\src.c.obj /FdCMakeFiles\\cmTC_f61dc.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-l3ef8c\\src.c
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-l3ef8c\\src.c(8): error C2065: 'choke': undeclared identifier
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-l3ef8c\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "cmake/CheckCPUArchitecture.cmake:36 (_internal_check_cpu_architecture)"
+      - "CMakeLists.txt:140 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-815oq9"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-815oq9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_LOONGARCH64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-815oq9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_eed60
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_eed60.dir\\src.c.obj /FdCMakeFiles\\cmTC_eed60.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-815oq9\\src.c
+        FAILED: CMakeFiles/cmTC_eed60.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_eed60.dir\\src.c.obj /FdCMakeFiles\\cmTC_eed60.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-815oq9\\src.c
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-815oq9\\src.c(8): error C2065: 'choke': undeclared identifier
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-815oq9\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:966 (check_include_file)"
+    checks:
+      - "Looking for immintrin.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jhn7b4"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jhn7b4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_IMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-jhn7b4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ed47a
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_ed47a.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_ed47a.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-jhn7b4\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ed47a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ed47a.dir\\CheckIncludeFile.c.obj  /out:cmTC_ed47a.exe /implib:cmTC_ed47a.lib /pdb:cmTC_ed47a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:975 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-oemebq"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-oemebq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-oemebq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_98a4b
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_98a4b.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_98a4b.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-oemebq\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_98a4b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_98a4b.dir\\CheckIncludeFile.c.obj  /out:cmTC_98a4b.exe /implib:cmTC_98a4b.lib /pdb:cmTC_98a4b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:996 (check_symbol_exists)"
+    checks:
+      - "Looking for M_PI"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lb3x27"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lb3x27"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_M_PI"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lb3x27'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d5016
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_d5016.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_d5016.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-lb3x27\\CheckSymbolExists.c
+        FAILED: CMakeFiles/cmTC_d5016.dir/CheckSymbolExists.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_d5016.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_d5016.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-lb3x27\\CheckSymbolExists.c
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-lb3x27\\CheckSymbolExists.c(8): error C2065: 'M_PI': undeclared identifier
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:1709 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_WIN32_CC"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-85854r"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-85854r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_WIN32_CC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-85854r'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_02e63
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WIN32_CC  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_02e63.dir\\src.c.obj /FdCMakeFiles\\cmTC_02e63.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-85854r\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_02e63.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_02e63.dir\\src.c.obj  /out:cmTC_02e63.exe /implib:cmTC_02e63.lib /pdb:cmTC_02e63.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1751 (check_include_file)"
+    checks:
+      - "Looking for d3d9.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lclum0"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lclum0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_D3D_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lclum0'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_9ecd3
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_9ecd3.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_9ecd3.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-lclum0\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9ecd3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9ecd3.dir\\CheckIncludeFile.c.obj  /out:cmTC_9ecd3.exe /implib:cmTC_9ecd3.lib /pdb:cmTC_9ecd3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1752 (check_include_file)"
+    checks:
+      - "Looking for d3d11_1.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-sr2p2h"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-sr2p2h"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_D3D11_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-sr2p2h'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_db7bc
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_db7bc.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_db7bc.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-sr2p2h\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_db7bc.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_db7bc.dir\\CheckIncludeFile.c.obj  /out:cmTC_db7bc.exe /implib:cmTC_db7bc.lib /pdb:cmTC_db7bc.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:1753 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_D3D12_H"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-igmha1"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-igmha1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_D3D12_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-igmha1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6da64
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_D3D12_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_6da64.dir\\src.c.obj /FdCMakeFiles\\cmTC_6da64.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-igmha1\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6da64.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6da64.dir\\src.c.obj  /out:cmTC_6da64.exe /implib:cmTC_6da64.lib /pdb:cmTC_6da64.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1761 (check_include_file)"
+    checks:
+      - "Looking for ddraw.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qs049o"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qs049o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_DDRAW_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-qs049o'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7f905
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_7f905.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_7f905.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-qs049o\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7f905.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7f905.dir\\CheckIncludeFile.c.obj  /out:cmTC_7f905.exe /implib:cmTC_7f905.lib /pdb:cmTC_7f905.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1762 (check_include_file)"
+    checks:
+      - "Looking for dsound.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-k5muuj"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-k5muuj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_DSOUND_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-k5muuj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_dd910
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_dd910.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_dd910.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-k5muuj\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_dd910.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dd910.dir\\CheckIncludeFile.c.obj  /out:cmTC_dd910.exe /implib:cmTC_dd910.lib /pdb:cmTC_dd910.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1763 (check_include_file)"
+    checks:
+      - "Looking for dinput.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lriz80"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lriz80"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_DINPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-lriz80'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_54fa0
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_54fa0.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_54fa0.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-lriz80\\CheckIncludeFile.c
+        C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\um\\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_54fa0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_54fa0.dir\\CheckIncludeFile.c.obj  /out:cmTC_54fa0.exe /implib:cmTC_54fa0.lib /pdb:cmTC_54fa0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1767 (check_include_file)"
+    checks:
+      - "Looking for dxgi.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hgflmk"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hgflmk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_DXGI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hgflmk'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7da71
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_7da71.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_7da71.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-hgflmk\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7da71.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7da71.dir\\CheckIncludeFile.c.obj  /out:cmTC_7da71.exe /implib:cmTC_7da71.lib /pdb:cmTC_7da71.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:1781 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_XINPUT_H"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ld6hqg"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ld6hqg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_XINPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-ld6hqg'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_397dd
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_397dd.dir\\src.c.obj /FdCMakeFiles\\cmTC_397dd.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-ld6hqg\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_397dd.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_397dd.dir\\src.c.obj  /out:cmTC_397dd.exe /implib:cmTC_397dd.lib /pdb:cmTC_397dd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:1785 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_XINPUT_GAMEPAD_EX"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gj3cgo"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gj3cgo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_XINPUT_GAMEPAD_EX"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-gj3cgo'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_fba35
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_GAMEPAD_EX  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_fba35.dir\\src.c.obj /FdCMakeFiles\\cmTC_fba35.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-gj3cgo\\src.c
+        FAILED: CMakeFiles/cmTC_fba35.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_GAMEPAD_EX  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_fba35.dir\\src.c.obj /FdCMakeFiles\\cmTC_fba35.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-gj3cgo\\src.c
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-gj3cgo\\src.c(4): error C2061: syntax error: identifier 'x1'
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-gj3cgo\\src.c(4): error C2059: syntax error: ';'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:1790 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_XINPUT_STATE_EX"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-pyutks"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-pyutks"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_XINPUT_STATE_EX"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-pyutks'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4bcba
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_STATE_EX  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4bcba.dir\\src.c.obj /FdCMakeFiles\\cmTC_4bcba.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-pyutks\\src.c
+        FAILED: CMakeFiles/cmTC_4bcba.dir/src.c.obj 
+        C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_STATE_EX  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4bcba.dir\\src.c.obj /FdCMakeFiles\\cmTC_4bcba.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-pyutks\\src.c
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-pyutks\\src.c(4): error C2061: syntax error: identifier 's1'
+        C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-pyutks\\src.c(4): error C2059: syntax error: ';'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:1795 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_WINDOWS_GAMING_INPUT_H"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7ytwmm"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7ytwmm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_WINDOWS_GAMING_INPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7ytwmm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b1250
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WINDOWS_GAMING_INPUT_H  /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_b1250.dir\\src.c.obj /FdCMakeFiles\\cmTC_b1250.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-7ytwmm\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b1250.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b1250.dir\\src.c.obj  /out:cmTC_b1250.exe /implib:cmTC_b1250.lib /pdb:cmTC_b1250.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1803 (check_include_file)"
+    checks:
+      - "Looking for tpcshrd.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cs3y3f"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cs3y3f"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_TPCSHRD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cs3y3f'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_9c434
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_9c434.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_9c434.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-cs3y3f\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9c434.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9c434.dir\\CheckIncludeFile.c.obj  /out:cmTC_9c434.exe /implib:cmTC_9c434.lib /pdb:cmTC_9c434.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1804 (check_include_file)"
+    checks:
+      - "Looking for roapi.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7321gi"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7321gi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_ROAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-7321gi'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2da55
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2da55.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_2da55.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-7321gi\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2da55.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2da55.dir\\CheckIncludeFile.c.obj  /out:cmTC_2da55.exe /implib:cmTC_2da55.lib /pdb:cmTC_2da55.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1805 (check_include_file)"
+    checks:
+      - "Looking for mmdeviceapi.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-z2h2ro"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-z2h2ro"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_MMDEVICEAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-z2h2ro'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7b175
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_7b175.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_7b175.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-z2h2ro\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7b175.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7b175.dir\\CheckIncludeFile.c.obj  /out:cmTC_7b175.exe /implib:cmTC_7b175.lib /pdb:cmTC_7b175.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1806 (check_include_file)"
+    checks:
+      - "Looking for audioclient.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cco3ws"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cco3ws"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_AUDIOCLIENT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-cco3ws'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_92c9a
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_92c9a.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_92c9a.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-cco3ws\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_92c9a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_92c9a.dir\\CheckIncludeFile.c.obj  /out:cmTC_92c9a.exe /implib:cmTC_92c9a.lib /pdb:cmTC_92c9a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1807 (check_include_file)"
+    checks:
+      - "Looking for sensorsapi.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-fm7kvr"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-fm7kvr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_SENSORSAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-fm7kvr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_40725
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_40725.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_40725.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-fm7kvr\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_40725.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_40725.dir\\CheckIncludeFile.c.obj  /out:cmTC_40725.exe /implib:cmTC_40725.lib /pdb:cmTC_40725.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeLists.txt:1808 (check_include_file)"
+    checks:
+      - "Looking for shellscalingapi.h"
+    directories:
+      source: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hbs3b3"
+      binary: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hbs3b3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP "
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/src/ase-2.28.2-705f8fad22.clean/cmake"
+      CMAKE_MSVC_DEBUG_INFORMATION_FORMAT: ""
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded$<$<CONFIG:Debug>:Debug>$<$<STREQUAL:dynamic,dynamic>:DLL>"
+      VCPKG_APPLOCAL_DEPS: "OFF"
+      VCPKG_CHAINLOAD_TOOLCHAIN_FILE: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/toolchains/windows.cmake"
+      VCPKG_TARGET_ARCHITECTURE: "x64"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg"
+    buildResult:
+      variable: "HAVE_SHELLSCALINGAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/CMakeScratch/TryCompile-hbs3b3'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_810e6
+        [1/2] C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\cl.exe  /nologo   /nologo /DWIN32 /D_WINDOWS /W3 /utf-8 /MP   -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_810e6.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_810e6.dir\\ /FS -c C:\\Users\\tutor\\Desktop\\particle-simulator\\vcpkg_installed\\vcpkg\\blds\\sdl2\\x64-windows-dbg\\CMakeFiles\\CMakeScratch\\TryCompile-hbs3b3\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_810e6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1439~1.335\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_810e6.dir\\CheckIncludeFile.c.obj  /out:cmTC_810e6.exe /implib:cmTC_810e6.lib /pdb:cmTC_810e6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+...

@@ -1,0 +1,3 @@
+Checking patch cmake/sdlchecks.cmake...
+Hunk #1 succeeded at 369 (offset 17 lines).
+Applied patch cmake/sdlchecks.cmake cleanly.

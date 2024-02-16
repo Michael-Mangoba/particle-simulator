@@ -1,0 +1,11 @@
+-- Note: imgui only supports static library linkage. Building static library.
+-- Using cached ocornut-imgui-v1.89.9.tar.gz.
+-- Cleaning sources at C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/imgui/src/v1.89.9-35b8d7fda8.clean. Use --editable to skip cleaning for the packages you specify.
+-- Extracting source C:/Users/tutor/AppData/Local/vcpkg/downloads/ocornut-imgui-v1.89.9.tar.gz
+-- Using source at C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/blds/imgui/src/v1.89.9-35b8d7fda8.clean
+-- Found external ninja('1.11.0').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/Users/tutor/Desktop/particle-simulator/vcpkg_installed/vcpkg/pkgs/imgui_x64-windows/share/imgui/copyright
+-- Performing post-build validation
