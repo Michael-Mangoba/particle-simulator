@@ -313,15 +313,24 @@ public:
 	{
 		ImGui::Begin("Method 2", 0, ImGuiWindowFlags_AlwaysAutoResize);
 		ImGui::InputInt("Start X", &m2_start_x);
+		clampValue(m2_start_x, 0, 1280);
 		ImGui::InputInt("Start Y", &m2_start_y);
+		clampValue(m2_start_y, 0, 720);
 		ImGui::InputInt("Velocity", &m2_velocity);
+		clampValue(m2_velocity, 1, 50);
 		ImGui::InputInt("Start Angle", &m2_start_angle);
+		clampValueRelativeToRange(m2_start_angle, 0, 360, m2_end_angle);
 		ImGui::InputInt("End Angle", &m2_end_angle);
-		if (ImGui::Button("Add Particle"))
+		clampValueRelativeToRangeEnd(m2_end_angle, 0, 360, m2_start_angle);
+		if (ImGui::Button("[Method 1] Add Particles in Batch"))
 		{
-			// add particle code
-			Particle newParticle(particle_id, m2_start_x, m2_start_y, m2_start_angle, m2_velocity, obstacles);
-			particles.push_back(newParticle);
+			for (int i = 0; i < batch_size; i++)
+			{
+				double angle = m2_start_angle + (m2_end_angle - m2_start_angle) * i / batch_size;
+				Particle newParticle(particle_id, m2_start_x, m2_start_y, angle, m2_velocity, obstacles);
+				particles.push_back(newParticle);
+				particle_id++;
+			}
 		}
 		ImGui::End();
 	}
@@ -330,15 +339,25 @@ public:
 	{
 		ImGui::Begin("Method 3", 0, ImGuiWindowFlags_AlwaysAutoResize);
 		ImGui::InputInt("Start X", &m3_start_x);
+		clampValue(m3_start_x, 0, 1280);
 		ImGui::InputInt("Start Y", &m3_start_y);
+		clampValue(m3_start_y, 0, 720);
 		ImGui::InputInt("Angle", &m3_angle);
+		clampValue(m3_angle, 0, 360);
 		ImGui::InputInt("Start Velocity", &m3_start_velocity);
+		clampValueRelativeToRange(m3_start_velocity, 1, 50, m3_end_velocity);
 		ImGui::InputInt("End Velocity", &m3_end_velocity);
-		if (ImGui::Button("Add Particle"))
+		clampValueRelativeToRangeEnd(m3_end_velocity, 1, 50, m3_start_velocity);
+
+		if (ImGui::Button("[Method 3] Add Particles in Batch"))
 		{
-			// add particle code
-			Particle newParticle(particle_id, m3_start_x, m3_start_y, m3_angle, m3_start_velocity, obstacles);
-			particles.push_back(newParticle);
+			for (int i = 0; i < batch_size; i++)
+			{
+				double velocity = m3_start_velocity + (m3_end_velocity - m3_start_velocity) * i / batch_size;
+				Particle newParticle(particle_id, m3_start_x, m3_start_y, m3_angle, velocity, obstacles);
+				particles.push_back(newParticle);
+				particle_id++;
+			}
 		}
 		ImGui::End();
 	}
