@@ -31,6 +31,7 @@ class Particle
 public:
 	int id;
 	int x, y;
+	int collided_obstacle_id = -1;
 	double angle;
 	int init_speed;
 	const double PI = 3.14159265358979323846;
@@ -45,7 +46,7 @@ public:
 		angle = 360 - angle;
 		angle = angle * PI / 180;
 		// print angle in degrees
-			std::cout << "Angle in degrees: " << angle << std::endl;
+		std::cout << "Angle in degrees: " << angle << std::endl;
 	}
 
 	void calculateNewPosition()
@@ -60,14 +61,14 @@ public:
 			angle -= 2 * PI;
 		}
 		// print angle in radians
-		//std::cout << "Angle in radians: " << angle << std::endl;
+		// std::cout << "Angle in radians: " << angle << std::endl;
 
 		// Calculate the displacement in x and y directions
 		int dx = (int)(init_speed * cos(angle));
 		int dy = (int)(init_speed * sin(angle));
 
 		// print displacement dx and dy
-		//std::cout << "Displacement in x: " << dx << ", Displacement in y: " << dy << std::endl;
+		// std::cout << "Displacement in x: " << dx << ", Displacement in y: " << dy << std::endl;
 
 		// Update the particle's position
 		x += dx;
@@ -81,11 +82,13 @@ public:
 		{						// If hitting the left wall
 			x = 0;				// Set x to the leftmost position
 			angle = PI - angle; // Reverse the x-component of the velocity
+			collided_obstacle_id = -1;
 		}
 		else if (x >= screen_width - 10)
 		{						   // If hitting the right wall
 			x = screen_width - 10; // Set x to the rightmost position
 			angle = PI - angle;	   // Reverse the x-component of the velocity
+			collided_obstacle_id = -1;
 		}
 
 		// Check if the particle is hitting the top or bottom wall
@@ -93,13 +96,14 @@ public:
 		{					// If hitting the top wall
 			y = 0;			// Set y to the topmost position
 			angle = -angle; // Reverse the y-component of the velocity
+			collided_obstacle_id = -1;
 		}
 		else if (y >= screen_height - 10)
 		{							// If hitting the bottom wall
 			y = screen_height - 10; // Set y to the bottommost position
 			angle = -angle;			// Reverse the y-component of the velocity
+			collided_obstacle_id = -1;
 		}
-		handleObstacleBounce();
 	}
 
 	void handleObstacleBounce()
@@ -121,8 +125,26 @@ public:
 			float distance = std::sqrt((x - closest_x) * (x - closest_x) + (y - closest_y) * (y - closest_y));
 
 			// Collision detected
-			if (distance <= 5)
+			if (distance <= 5 && obstacle.id != collided_obstacle_id)
 			{
+				collided_obstacle_id = obstacle.id;
+
+				double line_angle = std::atan2(dy, dx);
+				double new_angle = 2 * line_angle - angle;
+
+				// normalize the angle
+				while (new_angle < 0)
+				{
+					new_angle += 2 * PI;
+				}
+				while (new_angle > 2 * PI)
+				{
+					new_angle -= 2 * PI;
+				}
+
+				angle = new_angle;
+
+				// Print angles for debugging in degrees
 				// Calculate the normal to the obstacle line
 				float nx = -dy;
 				float ny = dx;
@@ -131,16 +153,7 @@ public:
 				float length = std::sqrt(nx * nx + ny * ny);
 				nx /= length;
 				ny /= length;
-
-				// Calculate the dot product of the movement vector and the normal vector
-				float dot = dx * nx + dy * ny;
-
-				// Reflect the movement vector about the normal vector
-				float reflected_dx = dx - 2 * dot * nx;
-				float reflected_dy = dy - 2 * dot * ny;
-
-				// Update the angle based on the reflected movement vector
-				angle = std::atan2(reflected_dy, reflected_dx);
+				std::cout << "Particle Angle: " << angle * 180.0 / M_PI << " degrees  Obstacle Angle: " << std::atan2(ny, nx) * 180.0 / M_PI << " degrees" << std::endl;
 			}
 		}
 	}
@@ -227,7 +240,7 @@ public:
 	{
 		multiThreadParticles(renderer);
 		// Render particles
-		//for (auto &particle : particles)
+		// for (auto &particle : particles)
 		//{
 		//	// Assuming Particle has a Render method
 		//	particle.Render(renderer);
@@ -250,41 +263,49 @@ public:
 		}
 	}
 
-	void prepareMultiThreading() {
+	void prepareMultiThreading()
+	{
 		// prepare multi-threading
 		unsigned int cores = std::thread::hardware_concurrency();
-		if (cores == 0) {
+		if (cores == 0)
+		{
 			std::cout << "Unable to determine the number of CPU cores." << std::endl;
 		}
-		else {
+		else
+		{
 			std::cout << "Number of CPU cores: " << cores << std::endl;
 			max_threads = cores;
 		}
 	}
 
-
-	void multiThreadParticles(SDL_Renderer* renderer) {
+	void multiThreadParticles(SDL_Renderer *renderer)
+	{
 		// Multi-threading
 		std::vector<std::thread> threads;
 
 		// Create threads
-		for (int i = 0; i < max_threads; i++) {
+		for (int i = 0; i < max_threads; i++)
+		{
 			threads.push_back(std::thread(&UserFrame::updateParticles, this, i, renderer));
 		}
-		
-		for (auto& thread : threads) {
+
+		for (auto &thread : threads)
+		{
 			thread.join();
 		}
 	}
 
-	void updateParticles(int thread_ID, SDL_Renderer* renderer) {
+	void updateParticles(int thread_ID, SDL_Renderer *renderer)
+	{
 		// print thread id
-		//std::cout << "Thread ID: " << thread_ID << std::endl;
-		if (particles.size() < thread_ID) {
+		// std::cout << "Thread ID: " << thread_ID << std::endl;
+		if (particles.size() < thread_ID)
+		{
 			return;
 		}
 
-		for (int i = thread_ID; i < particles.size(); i += max_threads) {
+		for (int i = thread_ID; i < particles.size(); i += max_threads)
+		{
 			particles[i].Render(renderer);
 		}
 	}
