@@ -40,7 +40,7 @@ public:
 	std::vector<Obstacle> &obstacles; // Reference to the vector of obstacles
 
 	Particle(int id, int x, int y, int init_angle, int init_speed, std::vector<Obstacle> &obstacles)
-		: id(id), x(x), y(y), angle(init_angle), init_speed(init_speed), obstacles(obstacles)
+		: id(id), x(x), y(y), angle(init_angle * PI / 180), init_speed(init_speed), obstacles(obstacles)
 	{
 	}
 
