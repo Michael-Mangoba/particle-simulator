@@ -164,7 +164,7 @@ class UserFrame : public UseImGui
 public:
 	std::vector<Particle> particles;
 	std::vector<Obstacle> obstacles;
-	int max_threads;
+	int max_threads = 4;
 	int particle_id = 0;
 	int particle_x = 0;
 	int particle_y = 0;
@@ -254,7 +254,6 @@ public:
 		unsigned int cores = std::thread::hardware_concurrency();
 		if (cores == 0) {
 			std::cout << "Unable to determine the number of CPU cores." << std::endl;
-			max_threads = 4;
 		}
 		else {
 			std::cout << "Number of CPU cores: " << cores << std::endl;
@@ -266,32 +265,25 @@ public:
 	void multiThreadParticles(SDL_Renderer* renderer) {
 		// Multi-threading
 		std::vector<std::thread> threads;
-		//create max_threads number of vectors to store particles for updateParticles method
-		std::vector<std::vector<Particle>> sub_particles(max_threads);
-
-		// Distribute the particles among the threads
-		for (int i = 0; i < particles.size(); i++) {
-			sub_particles[i % max_threads].push_back(particles[i]);
-		}
-
-		//display number of particles in each sub_particles
-		//for (int i = 0; i < max_threads; i++) {
-		//	std::cout << "Number of particles in sub_particles[" << i << "]: " << sub_particles[i].size() << std::endl;
-		//}
 
 		// Create threads
 		for (int i = 0; i < max_threads; i++) {
-			threads.push_back(std::thread(&UserFrame::updateParticles, this, std::ref(sub_particles[i]), renderer));
+			threads.push_back(std::thread(&UserFrame::updateParticles, this, i, renderer));
 		}
-
 		
 		for (auto& thread : threads) {
 			thread.join();
 		}
 	}
 
-	void updateParticles(vector<Particle>& sub_particles, SDL_Renderer* renderer) {
-		for (int i = 0; i < sub_particles.size(); i++) {
+	void updateParticles(int thread_ID, SDL_Renderer* renderer) {
+		// print thread id
+		//std::cout << "Thread ID: " << thread_ID << std::endl;
+		if (particles.size() < thread_ID) {
+			return;
+		}
+
+		for (int i = thread_ID; i < particles.size(); i += max_threads) {
 			particles[i].calculateNewPosition();
 			particles[i].handleWallBounce();
 			particles[i].handleObstacleBounce();
