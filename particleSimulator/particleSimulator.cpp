@@ -30,7 +30,7 @@ class Particle
 {
 public:
 	int id;
-	int x, y;
+	double x, y;
 	int collided_obstacle_id = -1;
 	double angle;
 	int init_velocity;
@@ -45,6 +45,7 @@ public:
 	{
 		angle = 360 - angle;
 		angle = angle * PI / 180;
+		
 		// print angle in degrees
 		std::cout << "Angle in degrees: " << angle << std::endl;
 	}
@@ -62,12 +63,14 @@ public:
 		}
 
 		// Calculate the displacement in x and y directions
-		int dx = (int)(init_velocity * cos(angle));
-		int dy = (int)(init_velocity * sin(angle));
+		double dx = (double)init_velocity * cos(angle);
+		double dy = (double)init_velocity * sin(angle);
+
 
 		// Update the particle's position
 		x += dx;
 		y += dy;
+
 	}
 
 	void handleWallBounce()
@@ -371,12 +374,6 @@ public:
 	void RenderParticlesAndObstacles(SDL_Renderer *renderer)
 	{
 		multiThreadParticles(renderer);
-		// Render particles
-		// for (auto &particle : particles)
-		//{
-		//	// Assuming Particle has a Render method
-		//	particle.Render(renderer);
-		//}
 		int screen_width = 1280;
 		int screen_height = 720;
 		// Set the color to white
